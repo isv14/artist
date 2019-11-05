@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Chladni Ernst</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 18px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            
+        }
+        header{
+            width: 100%;
+            display: flex;
+        }
+        header>div{
+            width: 50%;
+            height: 60vh;
+        }
+        header div img{
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+        .bloc_esq{
+            background: white;
+        }
+        .bloc_esq_img{
+            object-fit: cover;
+            object-position: top center;
+        }
+        .bloq_dre{
+            background: white;
+        }
+        .bloq_dre img{
+            object-fit: cover;
+            object-position: right center;
+        }
+        h1{
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            top:2vh;
+            height: 30vh;
+            color:darkolivegreen;
+           font-family:monospace;
+        }
+        article{
+            font-family: 'Raleway';
+            width: 33,4em;
+            margin: auto;
+        }
+        article>p:first-child{
+            color:darkolivegreen;
+            column-count: 2;
+            column-gap: 1.7em;
+            text-align: justify;
+            hyphens: auto;
+            column-rule: 1px solid black;
+            line-height: 1.4em;
+            padding: 8vh 0 5vh 0;
+        }
+        article #cos>p:first-child::first-letter{
+            color:darkolivegreen;
+            font-size:90px;
+            font-family:'Georgia', sans-serif;
+            float:left;
+            padding-right: 0.2em;
+            margin-top: -0.35em;
+            margin-bottom:-0.2em;  
+        }
+        article #cos{
+            margin: 0;
+            padding: 0 5em;
+           text-align: justify;
+            hyphens: auto;
+            width: auto;
+               
+        }
+        article #cos p{
+            padding: 0 0 1.5em 0;
+        } */
+        
+        .cercle, 
+        .hexagon{
+            background: black;
+        }
+        .cercle img, 
+        .hexagon img{
+            
+            mix-blend-mode: multiply;
+        }
+        .cercle,
+        .cercle img{
+            border-radius: 50%;
+        }
+        .cercle{
+            max-width: 12em;
+            float: left;
+            margin: 1em;
+            shape-margin: 1em;
+            shape-outside: circle(50%) border-box;
+            
+        }
+        .hexagon{
+            max-width: 15em;
+            float: right;
+            margin: 0em;
+            margin-right: -0.5em;
+            shape-margin: 2em;
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+        }
+        .hexagon, .hexagon img{
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        .cercle, .cercle img{
+            border-radius: 50%;
+        }
+        @media (max-width:600px){
+            body{
+                background: white;
+                font-size: 12px;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <header>
+        <div class="bloc_esq">
+        <img src="img/1.jpg">
+        </div>
+        <div class="bloc_dre">
+        <img src="img/2.jpg">
+        </div>
+        <h1>Ernst Florens Friedrich Chladni</h1>
+</header>
+    <article>
+        
+<p>Ernst Florenz Friedrich Chladni (pronunciación en alemán: [ˈɛʁnst ˈfloːʁɛns ˈfʁiːdʁɪç ˈkladnɪ] Wittenberg, 30 de noviembre de 1756 — Breslavia, 3 de abril de 1827) fue un físico alemán.
+
+Por su trabajo sobre las vibraciones y el cálculo de la velocidad del sonido para diferentes gases, es considerado el fundador de la acústica. Los patrones geométricos que aparecen formados por finas bases de arena, depositadas sobre una placa de vidrio o metal que se hace vibrar a frecuencias diferentes, son llamados "figuras sonoras de Chladni".</p>
+       <div id="cos">
+        
+<p>En 1794, Chladni publicó Über den Ursprung der von Pallas gefundenen und anderer ihr ähnlicher Eisenmassen und über einige damit in Verbindung stehende Naturerscheinungen (en alemán), (Sobre el origen del Hierro de Pallas y otros similares, y algunos fenómenos naturales asociados), obra en la que propuso que los meteoritos tienen su origen en el espacio exterior. Esta propuesta fue muy discutida en su época (lo que le trajo algunas burlas, ya que por entonces se creía que eran de origen volcánico) y, con este libro, Chladni se convirtió también en el fundador de la investigación moderna sobre los meteoritos.
+
+</p>
+ <div class="cercle"> 
+        <img src="img/5.jpg" alt="retrat">
+        </div>
+<p>La experiencia de las placas</p>
+
+<p>El objetivo de esta experiencia es la visualización de los modos propios de vibración de una placa cuadrada. Para ello se hará vibrar a diferentes frecuencias una placa metálica cuadrada sujeta por su centro y, espolvoreando arena fina sobre ella se observarán los patrones y líneas nodales que se forman en la misma, correspondiéndose cada patrón con un modo propio o frecuencia propia de vibración de la placa.
+El primero en realizar esta experiencia fue Chladni, frecuentemente llamado el padre de la Acústica y que también fue el primero en dar una explicación consecuente de los meteoritos. Para observar los modos de resonancia (modos propios de vibración) de una placa circular o cuadrada, sujeta por su centro, Chladni la hacía vibrar frotándola con el arco de un violín, después de haber espolvoreado arena fina sobre ella. Posteriormente dibujaba las líneas y patrones que formaba la arena sobre la placa. “El sonido puede verse”, fueron las palabras de Napoleón cuando, en 1808, Chladni realizó esta experiencia en la Academia de Ciencias de París.
+        </p>
+<div class="hexagon">
+        <img src="img/3.jpg">
+         </div>
+         
+<p>En esta práctica se llevará a cabo la misma experiencia que realizó Chladni. Para ello se utiliza un generador de frecuencias que se conecta a un motor al cual está sujeta por su centro una fina placa metálica. Si se hace vibrar el motor a diferentes frecuencias, como la placa está solidaria con él también vibrará a dichas frecuencias y, espolvoreando sobre ella arena fina, se observarán los patrones y líneas nodales que se forman sobre la placa. Estos patrones y líneas nodales se corresponden con las zonas y líneas en las cuales la placa no vibra, es decir, los nodos de las ondas estacionarias que se forman en la placa, y por tanto en ellos se producirá una acumulación de arena, dando lugar a curiosas figuras. En distintos momentos de la reproducción se indica la frecuencia a la que está vibrando la placa y, por tanto, a la que se forman la ondas estacionarias en ese momento.
+
+ </p>
+<p>Se denominan figuras de Chladni a los patrones formados por una sustancia granula sobre una superficie plana vibrando en un modo propio.
+
+Al propagarse ondas mecánicas por un objeto extendido, lo hacen en todas direcciones. Dependiendo de las longitudes características del cuerpo, las condiciones de contorno que este impone a las ondas pueden inducir la resonancia de alguno de los componentes en frecuencia de la perturbación incidente.
+En el caso de un objeto con geometría tipo membrana, como una tapa de guitarra, las oscilaciones resonantes se manifiestan en la dirección normal al plano del cuerpo. Al tratarse de ondas estacionarias, para cada modo característico, quedan determinadas en la superficie zonas ventrales donde la amplitud de vibración es máxima y nodales donde la amplitud es mínima. Así, si se distribuye una sustancia granular sobre el objeto, esta tenderá a acumularse en los nodos formando lo que se conoce como figuras o patrones de Chladni en honor al físico alemán Ernst Chladni.</p>
+        </div>     
+        </article>
+    </body>
+</html>
